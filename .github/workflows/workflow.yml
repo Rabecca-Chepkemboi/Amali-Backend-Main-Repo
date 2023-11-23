@@ -1,0 +1,32 @@
+# name: Django CI/CD
+# on:
+#   push:
+#     branches:
+#       - main
+#       - dev
+#       - staging
+#   pull_request:
+#     branches:
+#       - main
+#       - dev
+#       - staging
+# jobs:
+#   build:
+#     runs-on: ubuntu-20.04
+#     steps:
+#     - name: Checkout code
+#       uses: actions/checkout@v2
+#     - name: Set up Python
+#       uses: actions/setup-python@v2
+#       with:
+#         python-version: '3.9'
+#     # - name: Install Dependencies
+#     #   run: pip install -r requirements.txt
+#     # - name: Install requirements
+#     #   run: pip install -r requirements.txt
+#     # - name: Check Syntax
+#     #   run: pre-commit run --all-files
+#     # - name: Run Migrations
+#     #   run: python3 manage.py migrate
+#     # - name: Run Tests
+#     #   run: python3 manage.py test
